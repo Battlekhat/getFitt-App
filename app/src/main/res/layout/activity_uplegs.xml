@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".BackActivity">
+    tools:context=".UpLegsActivity">
 
     <com.google.android.youtube.player.YouTubePlayerView
         android:id="@+id/youtube_player"
@@ -12,19 +12,6 @@
         android:layout_height="wrap_content"
         android:visibility="visible"
         app:layout_constraintTop_toTopOf="parent" />
-
-
-    <TextView
-        android:id="@+id/textView8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="128dp"
-        android:scrollbars="vertical"
-        android:text="bentoverrow"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.048"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button2" />
 
     <Button
         android:id="@+id/button"
