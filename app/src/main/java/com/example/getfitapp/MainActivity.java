@@ -18,14 +18,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         backButton = (ImageButton) findViewById(R.id.backButton);
-        backButton.setOnClickListener(new View.OnClickListener()
+        backButton.setOnClickListener(V ->
         {
-            @Override
-            public void onClick(View view)
-            {
-                Intent i = new Intent(getApplicationContext(), BackActivity.class);
-                startActivity(i);
-            }
+            Intent intentBack = new Intent(this, BackActivity.class);
+            startActivity(intentBack);
         });
 
     }
