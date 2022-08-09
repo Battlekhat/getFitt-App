@@ -24,4 +24,14 @@
         extension. A wide overhand grip involves overall back musculature while slightly emphasizing
         Rear Delt, Infraspinatus and Teres Minor involvement. Also known as Pendlay Row.
     </string>
+    <string name="back_text">Back</string>
+    <string name="chest_Text">Chest</string>
+    <string name="core_text">Core</string>
+    <string name="upLegs_Text">Upper Legs</string>
+    <string name="totBod_Text">Total Body</string>
+    <string name="back_descript">Back Workouts</string>
+    <string name="chest_descript">Chest Workouts</string>
+    <string name="core_descript">Core Workouts</string>
+    <string name="upLeg_descript">Upper Leg Workouts</string>
+    <string name="totBod_descript">Total Body Workouts</string>
 </resources>

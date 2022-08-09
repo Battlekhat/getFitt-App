@@ -1,42 +1,39 @@
 package com.example.getfitapp;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
-
-import android.text.method.ScrollingMovementMethod;
+import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.os.Bundle;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.google.android.youtube.player.YouTubeBaseActivity;
 import com.google.android.youtube.player.YouTubeInitializationResult;
 import com.google.android.youtube.player.YouTubePlayer;
 import com.google.android.youtube.player.YouTubePlayerView;
-import com.google.android.youtube.player.YouTubeBaseActivity;
 
-public class BackActivity extends YouTubeBaseActivity {
-
+public class ChestActivity extends YouTubeBaseActivity {
     YouTubePlayerView mYouTubePlayerView;
     YouTubePlayer.OnInitializedListener onInitializedListener;
     Button returnToMain;
     Button btnPlay;
     TextView description;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_back);
+        setContentView(R.layout.activity_chest);
 
         returnToMain = (Button) findViewById(R.id.button);
         btnPlay = (Button) findViewById(R.id.button2);
-        mYouTubePlayerView = (YouTubePlayerView) findViewById(R.id.youtube_player);
+        mYouTubePlayerView = (YouTubePlayerView) findViewById(R.id.yt_player);
         description = (TextView) findViewById(R.id.textView8);
 
-        onInitializedListener = new YouTubePlayer.OnInitializedListener(){
+        onInitializedListener = new YouTubePlayer.OnInitializedListener() {
 
             @Override
             public void onInitializationSuccess(YouTubePlayer.Provider provider, YouTubePlayer youTubePlayer, boolean wasRestored) {
-                if (!wasRestored) youTubePlayer.cueVideo("Nq7GQxyMrW4");
+                if (!wasRestored) youTubePlayer.cueVideo("wzq57DB5Ppg");
             }
 
             @Override
@@ -49,19 +46,17 @@ public class BackActivity extends YouTubeBaseActivity {
             @Override
             public void onClick(View v) {
 
-                mYouTubePlayerView.initialize(PlayerConfig.API_KEY,onInitializedListener);
+                mYouTubePlayerView.initialize(PlayerConfig.API_KEY, onInitializedListener);
             }
         });
 
 
-        returnToMain.setOnClickListener(new View.OnClickListener()
-        {
+        returnToMain.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-               finish();
+                finish();
             }
         });
-
 
 
     }
